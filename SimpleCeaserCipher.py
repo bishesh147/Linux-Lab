@@ -10,7 +10,7 @@ def encode(s: str, key: int)-> str:
             continue
         if count%50 == 0 and len(encoded) != 0:
             encoded += "\n"
-        if count%5 == 0 and len(encoded) != 0 and count%50 != 0:
+        if count%5 == 0 and len(encoded) != 0:
             encoded += " "
         encoded += chr(65 + (ord(c)-65+key) % 26)
         count += 1
